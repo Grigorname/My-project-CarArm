@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rend CarArm - Прокат автомобилей</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="icon" href="icon/free-icon-picture-7354200.png" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Rent a Car - Прокат Машин</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#" id="homeBtn">Главная</a></li>
+          <li><a href="#" id="carsBtn">Машины</a></li>
+          <li><a href="#" id="contactBtn">Контакты</a></li>
+          <li>
+            <a href="https://wa.me/37494808520" id="contactTel" target="_blank">
+              <img
+                src="../icon/Без названия.png"
+                alt="watsap"
+                style="width: 20px; height: 20px; margin-right: 5px"
+              />
+              <u>+37494808520</u>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="gallery">
+      <div class="photo" id="fordFusionPhoto">
+        <div class="overlay">
+          <div class="arrow left-arrow" onclick="changeFordFusionImage(-1)">
+            &lt;
+          </div>
+          <img src="../img/fushion.jpg" />
+          <img src="../img/fushion.jpg" style="display: none" />
+          <img src="../img/fushion salon.jpg" style="display: none" />
+          <div class="arrow right-arrow" onclick="changeFordFusionImage(1)">
+            &gt;
+          </div>
+        </div>
+        <span class="car-info">
+          <span
+            class="car-name"
+            onclick="showCarDetails('Ford Fusion', '2016', 'from 16600 dram')"
+            >Ford Fusion</span
+          >
+          <span class="car-year">2016</span>
+          <span class="dram">from 16600 dram</span>
+        </span>
+        <img src="../img/IMG_20230506_220335.jpg" alt="Photo 1" />
+        <div class="logo-inside-photo">
+          <div class="person-logo">
+            <div class="head"></div>
+            <div class="eye left-eye"></div>
+            <div class="eye right-eye"></div>
+            <div class="body">
+              <h3>4</h3>
+            </div>
+            <div class="arm left"></div>
+            <div class="arm right"></div>
+            <div class="seats in cars"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="photo" id="dodgeJourneyPhoto">
+        <div class="overlay">
+          <div class="arrow left-arrow" onclick="changeDodgeJourneyImage(-1)">
+            &lt;
+          </div>
+          <img src="../img/dojh_zad.jpg" id="dodgeJourneyImage1" />
+          <img
+            src="../img/dojh_salon_zad.jpg"
+            style="display: none"
+            id="dodgeJourneyImage2"
+          />
+          <img
+            src="../img/dojh_salon.jpg"
+            style="display: none"
+            id="dodgeJourneyImage3"
+          />
+          <div class="arrow right-arrow" onclick="changeDodgeJourneyImage(1)">
+            &gt;
+          </div>
+        </div>
+        <span class="car-info">
+          <span
+            class="car-name"
+            onclick="showCarDetails('Dodge Journey', '2018', 'from 19800 dram')"
+            >Dodge Journey</span
+          >
+          <span class="car-year">2018</span>
+          <span class="dram">from 19800 dram</span>
+        </span>
+        <img src="../img/dojh_pered.jpg" alt="Photo 2" />
+      </div>
+
+      <div class="photo">
+        <div class="overlay">
+          <span
+            class="car-name"
+            onclick="showCarDetails('Kia Forte', '2016', 'from 14900 dram')"
+            >Kia Forte</span
+          >
+          <span class="car-year">2016</span>
+          <span class="dram">from 14900 dram</span>
+        </div>
+        <img src="../img/IMG_20240119_121052.jpg" alt="Photo 3" />
+      </div>
+    </section>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
